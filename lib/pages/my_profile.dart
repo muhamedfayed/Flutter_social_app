@@ -31,7 +31,7 @@ class _MyProfileState extends State<MyProfile> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              SizedBox(height: 40),
+              SizedBox(height: 30),
               CircleAvatar(
                 backgroundImage: AssetImage(
                   "assets/Profile.jpg",
@@ -52,7 +52,6 @@ class _MyProfileState extends State<MyProfile> {
                 style: TextStyle(),
               ),
               SizedBox(height: 20),
-              SizedBox(height: 40),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 50),
                 child: Row(
@@ -117,7 +116,7 @@ class _MyProfileState extends State<MyProfile> {
                 padding: EdgeInsets.all(5),
                 itemCount: 20,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 1,
+                  crossAxisCount: 2,
                   childAspectRatio: 200 / 200,
                 ),
                 itemBuilder: (BuildContext context, int index) {
